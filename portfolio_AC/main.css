@@ -251,9 +251,22 @@ button.Contact-btn{
 	text-transform: uppercase;
 	color: #fff;
 	outline: none;
-	border:1;
+	border-width: 1px;
 	border-radius: 5px;
 	border-color: #fff;
 	padding: 10px 20px;
 	background-color: transparent;
+	transition: color 0.25s, background-color 0.25s;
+}
+
+button.Contact-btn:hover{
+	
+	/*animation: 0.25s fade 0s both;*/
+	color: #000;
+	background-color: #fff;
+}
+
+
+button.Contact-btn:active{
+	box-shadow: 0px 0px 30px #000;
 }
