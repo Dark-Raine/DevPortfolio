@@ -3,29 +3,33 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://use.fontawesome.com/b1eac985b6.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
 	<title>Anderson Coelho</title>
 
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+	
 	<header>
-		<h2><a href="#">< <span>&Lambda;C</span> ></a></h2>
+		<h2><a href="index.html">< <span>&Lambda;C</span> ></a></h2>
 
 		<nav>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Projects</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a id="top" onclick="toTop(); return false;" href="#">Home</a></li>
+			<li><a onclick="initScroll('work'); return false;" href="#">Projects</a></li>
+			<li><a onclick="initScroll('Contact'); return false;" href="#">Contact</a></li>
 		</nav>
 	</header>
-	<section class="hero">
+	<section class="hero" id="hero">
 		<div class="background-image" style="background-image: url(images/hero.jpg);"></div>
 		<div class="hero-content-area">
 			<h1><span class="outer"><</span> <span class="one">Anderson Coelho</span> <br/><span class="two">id</span><span class="outer">=</span><span class="three">"Front-end Developer"</span> <span class="outer">></span></h1>
 			<h3><span class="highlight">Based in south east London. If your looking for a responsive website or your an employer looking to hire use the button below</span></h3>
-			<a href="#" class="btn">Contact Me</a>
+			<!-- <a href="#" class="Contact-btn">Contact Me</a> -->
+			<button class="Contact-btn">Contact Me</button>
 		</div>	
 	</section>
-	<section class="work">
+	<section class="work" id="work">
 		<ul class="layout">
 			<li>
 				<img src="images/proj_display.jpg">
@@ -58,7 +62,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class="Contact">
+	<section class="Contact" id="Contact">
 		<form>
 
 			<input  class="small style" type="text" name="Name" placeholder="Your name" required>
@@ -72,6 +76,18 @@
 		</form>
 		
 	</section>
+	<footer>
+		<h4>&copy;Anderson Coelho</h4>
+		<ul>
+			<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+			<li><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+
+		</ul>
+
+	</footer>
 
 </body>
 </html>
