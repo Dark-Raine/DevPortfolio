@@ -227,9 +227,7 @@ section.Contact{
 	border-radius: 5px;
 	border:0;
 	outline: none;
-	padding: 10px 20px;
-	/*flex-basis: 100%;*/
-	/*flex: 1;*/
+	padding: 10px 20px;	
 }
 
 
@@ -243,8 +241,6 @@ section.Contact{
 	border:0;
 	outline: none;
 	padding: 10px 20px;
-
-	/*flex: 3;*/
 }
 
 button.Contact-btn{
@@ -278,4 +274,31 @@ button.Contact-btn:active{
 
 footer{
 	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 80px;
 }
+footer p{
+	color: #fff;
+}
+
+footer ul{
+	display: flex;
+	list-style: none;
+	margin: 10px;
+}
+
+footer ul li{
+	margin: 0px 10px;
+}
+
+footer ul li a{
+	transition: color 0.25s;
+}
+footer ul li a:hover{
+	color: #a6e22e;
+}
+
+/* yellow = #e6db74 green = #a6e22e pink = #f92672*/
