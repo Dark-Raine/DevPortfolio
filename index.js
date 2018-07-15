@@ -4,11 +4,13 @@ var express = require('express'),
 bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require('path');
+const dotenv = require('dotenv').config();
 
 const nodemailer = require('nodemailer');
 
-usr = 'axzonexgamer@gmail.com',
-psw = '4Superbine';
+usr = process.env.EM_USER,
+psw = process.env.EM_PASS,
+rec = process.env.EM_DEST;
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
@@ -43,8 +45,8 @@ app.post('/send' , function(req , res){
     let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'nodetestervs@gmail.com', // generated ethereal user
-            pass: '4Superspy' // generated ethereal password
+            user: usr, // generated ethereal user
+            pass: psw // generated ethereal password
         },
         tls:{
             rejectUnauthorized:false
@@ -54,7 +56,7 @@ app.post('/send' , function(req , res){
         // setup email data with unicode symbols
         let mailOptions = {
             from: '"Anderson" <axzonexgamer@gmail.com>', // sender address
-            to: sendTo, // list of receivers
+            to: rec, // list of receivers
             subject: 'node request', // Subject line
             text: 'Hello world?', // plain text body
             html: output // html body
