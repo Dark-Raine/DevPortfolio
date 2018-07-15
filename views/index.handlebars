@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+	<script type="text/javascript" src="main.js"></script>
+	<title>Anderson Coelho</title>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	
+	<header>
+		<h2><a href="index.html">< <span>&Lambda;C</span> ></a></h2>
+
+		<nav>
+			<li><a id="top" onclick="toTop(); return false;" href="#">Home</a></li>
+			<li><a onclick="initScroll('work'); return false;" href="#">Projects</a></li>
+			<li><a onclick="initScroll('Contact'); return false;" href="#">Contact</a></li>
+		</nav>
+	</header>
+	<section class="hero" id="hero">
+		<div class="hero-content-area">
+			<h1><span class="outer"><</span> <span class="one">Anderson Coelho</span> <br/><span class="two">id</span><span class="outer">=</span><span class="three">"Front-end Developer"</span> <span class="outer">></span></h1>
+			<h3><span class="highlight">Based in south east London. If your looking for a responsive website or your an employer looking to hire use the button below</span></h3>
+			<!-- <a href="#" class="Contact-btn">Contact Me</a> -->
+			<button class="Contact-btn">Contact Me</button>
+		</div>	
+	</section>
+	<section class="work" id="work">
+		<ul class="layout">
+			<li>
+				<img src="images/proj_display.jpg">
+				
+				<div class="discription-container">
+					<h4>ARC</h4>
+					<p>Anderson's responsive web portfolio.</p>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JAVASCRIPT</li>
+						<li>PHP</li>
+						<li>Responsive</li>
+					</ul>
+				</div>
+			</li>
+			<hr>
+			<li>
+				<img src="images/proj_display.jpg">
+				
+				<div class="discription-container">
+					<h4>Mountain Travel</h4>
+					<p>Advenure tours from around the world.</p>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Responsive</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<section class="Contact" id="Contact">
+		<form method="POST" action="send">
+
+			<input  class="small style" type="text" name="name" placeholder="Your name" required>
+			<input  class="small style" type="email" name="email" placeholder="Your Email Address" required>
+			<input  class="small style" type="text" name="phone" placeholder="Your Number" optional>
+			<textarea class="large style" name="message" placeholder="Enter your message" required rows="6"></textarea>
+
+			<button type="submit"  value="submit" class="Contact-btn">Submit</button>
+
+			
+		</form>
+		
+	</section>
+	<footer>
+		<p>&copy;  Anderson Coelho</p>
+		<ul>
+			<li><a href="https://github.com/Dark-Raine" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/anderson-coelho-757919154/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+			<li><a href="https://discordapp.com/users/371667998962089984/" target="_blank"><i class="fab fa-discord fa-lg"></i></a></li>
+			<li><a href="#"><i class="fas fa-envelope-square fa-lg"></i></a></li>
+
+
+		</ul>
+
+	</footer>
+
+</body>
+</html>
