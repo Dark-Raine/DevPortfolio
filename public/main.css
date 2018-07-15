@@ -246,6 +246,7 @@ margin-bottom: 25px;
 
 .discription-container p{
 	margin-bottom: 25px;
+	width: 400px;
 }
 
 .discription-container ul{
@@ -289,6 +290,9 @@ margin-bottom: 25px;
 		margin-top: -20px;
 		margin-left: 0px;
 		text-align: center;
+	}
+	.discription-container p{
+		width: 300px;
 	}
 }
 
