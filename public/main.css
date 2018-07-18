@@ -403,5 +403,9 @@ footer ul li a{
 footer ul li a:hover{
 	color: #a6e22e;
 }
-
+/* form check classes */
+.error{
+    border-color: red;
+    border-width: 3px;
+}
 /* yellow = #e6db74 green = #a6e22e pink = #f92672*/

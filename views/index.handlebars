@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
 	<script type="text/javascript" src="main.js"></script>
+	<script src="formcheck.js"></script>
 	<title>Anderson Coelho</title>
 
 	<link rel="stylesheet" type="text/css" href="main.css">
@@ -72,7 +73,7 @@
 			<input  class="small style" type="text" name="phone" placeholder="Your Number" optional>
 			<textarea class="large style" name="message" placeholder="Enter your message" required rows="6"></textarea>
 
-			<button type="submit"  value="submit" class="Contact-btn">Submit</button>
+			<button type="submit"  value="submit" class="Contact-btn" onclick="return formValidate();">Submit</button>
 
 			
 		</form>
