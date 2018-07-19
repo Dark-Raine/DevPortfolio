@@ -80,7 +80,7 @@ header nav li{
 	font-size: 24px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 700px){
 	header{
 		flex-direction: column;
 	}
@@ -96,7 +96,7 @@ header nav li{
 		font-size: 32px;
 	}
 }
-@media (max-width: 700px){
+/* @media (max-width: 700px){
 	
 	nav{
 		margin-left: 25px;
@@ -106,10 +106,10 @@ header nav li{
 	}
 	header h2{
 	
-		/* margin-left: -10px; */
+		margin-left: -10px;
 		font-size: 32px;
 	}
-}
+} */
 
 
 /*hero*/
@@ -187,7 +187,7 @@ header nav li{
 	padding: 20px 46px 20px 46px;	
 }
 
-@media (max-width: 400px){
+@media (max-width: 700px){
 	.hero-content-area h1{
 		font-size: 26px;
 		width: 350px;
@@ -203,15 +203,15 @@ header nav li{
 		
 	}
 }
-@media (max-width: 700px){
+/* @media (max-width: 700px){
 	.hero-content-area h1{
 		font-size: 26px;
 		width: 350px;
-		/* margin-left: -70px; */
+		margin-left: -70px;
 		margin-top: 75px;
 	}
 	
-}
+} */
 
 /*work*/
 .work{
@@ -267,7 +267,7 @@ margin-bottom: 25px;
 	padding: 5px;
 }
 
-@media(max-width:400px){
+@media(max-width:700px){
 	.layout li{
 		flex-direction: column;
 		padding-bottom: 10px;
